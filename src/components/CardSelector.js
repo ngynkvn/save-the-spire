@@ -42,7 +42,7 @@ class CardSelector extends Component {
             }
         };
         let cards_keys = Object.keys(cards).sort()
-        cards_keys = cards_keys.filter(card => card.toLowerCase().startsWith(this.state.searchTerm.trim()));
+        cards_keys = cards_keys.filter(card => card.toLowerCase().startsWith(this.state.searchTerm.trim().toLowerCase()));
         let cardsList = [];
 
         for(let i = 0; i < cards_keys.length; i++) {

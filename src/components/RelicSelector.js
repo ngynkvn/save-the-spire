@@ -26,7 +26,7 @@ class RelicSelector extends Component {
         };
 
         let relics_keys = Object.keys(relics).sort();
-        relics_keys = relics_keys.filter(relic => relic.toLowerCase().startsWith(this.state.searchTerm.trim()));
+        relics_keys = relics_keys.filter(relic => relic.toLowerCase().startsWith(this.state.searchTerm.trim().toLowerCase()));
 
         let relicsList = [];
 
